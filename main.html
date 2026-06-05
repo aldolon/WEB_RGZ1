@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПАО НК Роснефть</title>
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/open-sans@4.5.0/index.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<!-- ============================================
+    ШАПКА САЙТА (HEADER)
+-->
+<header>
+    <!-- Верхняя часть шапки с логотипом -->
+    <div class="header-top">
+        <div class="container">
+            <div class="logo-area">
+                <!-- Логотип Роснефть: обычная картинка -->
+                <img src="logo.png" alt="Логотип Роснефти" width="52" height="52">
+                <div class="logo-text">
+                    <h1>РОСНЕФТЬ</h1>
+                    <span>ПАО «НК «Роснефть»</span>
+                </div>
+            </div>
+            <!-- Текущая дата, вставляется через JavaScript -->
+            <div style="color: #5e636e; font-size: 13px;">
+                <span id="currentDate"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Навигационное меню -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="about">О компании</a></li>
+                <li><a href="#" class="nav-link" data-page="news">Новости</a></li>
+                <li><a href="#" class="nav-link" data-page="currency">Курс валют</a></li>
+                <li><a href="#" class="nav-link" data-page="contacts">Контакты</a></li>
+                <li><a href="#" class="nav-link" data-page="video">Видео</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- ============================================
+    СТРАНИЦА 1: О КОМПАНИИ (ОСНОВНАЯ ИНФОРМАЦИЯ)
+-->
+<div id="page-about" class="page active">
+    <!-- Герой-блок с заголовком страницы -->
+    <div class="hero">
+        <div class="container">
+            <h2>ПАО «НК «Роснефть»</h2>
+            <p>Крупнейшая нефтегазовая компания России, лидер отрасли по объёмам добычи и переработки нефти</p>
+        </div>
+    </div>
+
+    <!-- Секция: Общая информация -->
+    <div class="section">
+        <div class="container">
+            <h2>Общая информация</h2>
+            <div class="col">
+                <!--  колонка - текст -->
+                <div>
+                    <p><b>Публичное акционерное общество «Нефтяная компания «Роснефть»</b> — крупнейшая нефтегазовая компания России и одна из крупнейших нефтегазовых компаний мира. Компания занимается <em>разведкой и добычей нефти и газа</em>, а также переработкой и реализацией нефтепродуктов.</p>
+                    <p>Год создания компании — <u>1993 год</u>. Роснефть была создана на базе <a href="https://www.rosneft.ru" target="_blank">Государственного унитарного предприятия</a>, учреждённого Постановлением Правительства Российской Федерации. Основателями выступили представители правительства РФ, в частности, при участии <strong>Андрея Шпигоцкого</strong> и <strong>Сергея Богданчикова</strong>, ставшего первым президентом компании.</p>
+                    <p>Компания является <b>стратегически важным предприятием</b> для экономики Российской Федерации. Штаб-квартира расположена в Москве, на <em>Софийской набережной</em>.</p>
+                </div>
+            </div>
+
+            <!-- Блок статистики (4 карточки) -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-num">1993</div>
+                    <div class="stat-label">Год основания</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">200 000+</div>
+                    <div class="stat-label">Сотрудников</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">~2 млн</div>
+                    <div class="stat-label">баррелей/сутки добыча</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">ТОП-10</div>
+                    <div class="stat-label">Нефтегазовых компаний мира</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Секция: Направления деятельности -->
+    <div class="section">
+        <div class="container">
+            <h2>Направления деятельности</h2>
+            <p>Роснефть осуществляет полный цикл работ в нефтегазовой отрасли — от <em>геологоразведки</em> до <strong>реализации нефтепродуктов</strong> конечному потребителю.</p>
+
+            <!-- Сетка из 6 направлений деятельности -->
+            <div class="directions-grid">
+                <div class="direction-card"><h4>🔍 Геологоразведка</h4><p>Поиск и разведка новых месторождений нефти и газа на территории России и за рубежом.</p></div>
+                <div class="direction-card"><h4>🛢️ Добыча нефти и газа</h4><p>Разработка и эксплуатация нефтяных и газовых месторождений, включая шельфовые проекты.</p></div>
+                <div class="direction-card"><h4>🏭 Переработка</h4><p>Переработка сырой нефти на собственных нефтеперерабатывающих заводах в России и за рубежом.</p></div>
+                <div class="direction-card"><h4>⛽ Сбыт нефтепродуктов</h4><p>Реализация бензина, дизельного топлива, авиационного керосина через сеть АЗС.</p></div>
+                <div class="direction-card"><h4>🚢 Логистика и транспорт</h4><p>Транспортировка нефти и нефтепродуктов по трубопроводам, морским и речным путям.</p></div>
+                <div class="direction-card"><h4>🔬 Научные исследования</h4><p>Разработка инновационных технологий в области добычи, переработки и экологии.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================================
+    Секция: История компании (таймлайн) -->
+    <div class="section">
+        <div class="container">
+            <h2>Краткая история компании</h2>
+            <p>История Роснефти неразрывно связана с историей развития нефтегазовой отрасли России. Ниже представлены <em>ключевые вехи</em> в истории компании.</p>
+
+            <!-- Таймлайн -->
+            <div class="timeline">
+                <div class="timeline-item"><span class="year">1993</span><h4>Создание компании</h4><p><b>Постановлением Правительства РФ</b> была создана государственная компания «Роснефть» на базе ряда государственных нефтегазовых предприятий. Первым президентом компании стал <u>Сергей Богданчиков</u>.</p></div>
+                <div class="timeline-item"><span class="year">2004</span><h4>Приобретение «Юганскнефтегаза»</h4><p>Роснефть приобрела основной добывающий актив <strong>ОАО «ЮКОС»</strong> — «Юганскнефтегаз» — на аукционе, что значительно увеличило объёмы добычи компании.</p></div>
+                <div class="timeline-item"><span class="year">2006</span><h4>Выход на IPO</h4><p>Компания провела <em>первичное размещение акций</em> (IPO) на российских биржах, став одной из крупнейших публичных компаний России.</p></div>
+                <div class="timeline-item"><span class="year">2013</span><h4>Приобретение ТНК-BP</h4><p>Роснефть завершила сделку по приобретению <strong>ТНК-BP</strong> — одного из крупнейших нефтегазовых холдингов России, став абсолютным лидером отрасли.</p></div>
+                <div class="timeline-item"><span class="year">2016</span><h4>Приватизация</h4><p>Проведена <em>частичная приватизация</em> — 19,5% акций были проданы консорциуму инвесторов. Компания продолжает оставаться под контролем государства.</p></div>
+                <div class="timeline-item"><span class="year">2020-е</span><h4>Современный этап</h4><p>Под руководством <b>Игоря Сечина</b> компания активно развивает <strong>арктические проекты</strong>, «Восток Ойл» и другие стратегические направления, укрепляя позиции на мировом рынке.</p></div>
+            </div>
+
+            <!-- Выделенный блок с интересным фактом -->
+            <div class="highlight-box">
+                <h4>📌 Интересный факт</h4>
+                <p>Роснефть владеет <em>крупнейшим в мире</em> проектом по разработке арктических запасов — <strong>«Восток Ойл»</strong> на Таймыре. Общие запасы проекта оцениваются более чем в <u>5 млрд тонн</u> нефти.</p>
+            </div>
+
+            <!-- Таблица с ключевыми показателями -->
+            <h3>Ключевые показатели</h3>
+            <table class="info-table">
+                <thead><tr><th>Показатель</th><th>Значение</th></tr></thead>
+                <tbody>
+                    <tr><td><b>Добыча нефти</b></td><td>~190 млн тонн в год</td></tr>
+                    <tr><td><b>Переработка</b></td><td>~80 млн тонн в год</td></tr>
+                    <tr><td><b>Сеть АЗС</b></td><td>Более 3 000 станций в России</td></tr>
+                    <tr><td><b>Численность персонала</b></td><td>Более 200 000 человек</td></tr>
+                    <tr><td><b>Капитализация</b></td><td>Около 6 трлн рублей</td></tr>
+                    <tr><td><b>Президент компании</b></td><td><em>Игорь Иванович Сечин</em></td></tr>
+                </tbody>
+            </table>
+
+            <p>Более подробную информацию о компании можно найти на <a href="https://www.rosneft.ru" target="_blank">официальном сайте ПАО «НК «Роснефть»</a>.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+    СТРАНИЦА 2: НОВОСТИ
+-->
+<div id="page-news" class="page">
+    <div class="hero">
+        <div class="container">
+            <h2>Новости компании</h2>
+            <p>Последние события и достижения ПАО «НК «Роснефть»</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2>Последние новости</h2>
+            <!-- Сетка новостей, заполняется через JavaScript -->
+            <div class="news-grid" id="newsGrid"></div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+    МОДАЛЬНОЕ ОКНО (для полного просмотра новости)
+-->
+<div class="modal-overlay" id="newsModal">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <h3 id="modalTitle"></h3>
+        <div class="modal-date" id="modalDate"></div>
+        <div class="modal-text" id="modalText"></div>
+    </div>
+</div>
+
+<!-- ============================================
+    СТРАНИЦА 3: КУРС ВАЛЮТ (CNY/RUB)
+-->
+<div id="page-currency" class="page">
+    <div class="hero">
+        <div class="container">
+            <h2>Курс валют: CNY/RUB</h2>
+            <p>Калькулятор китайского юаня к российскому рублю</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2>Калькулятор валют</h2>
+            <div class="currency-section">
+                <!-- Калькулятор конвертации валют -->
+                <div class="calc-area">
+                    <div class="calc-group">
+                        <label for="amountFrom">Сумма</label>
+                        <input type="number" id="amountFrom" value="1000" min="0" step="any">
+                    </div>
+                    <!-- Кнопка для смены направления конвертации -->
+                    <button class="swap-btn" id="swapBtn" title="Поменять направление">⇄</button>
+                    <div class="calc-group">
+                        <label for="amountTo">Результат</label>
+                        <input type="number" id="amountTo" readonly>
+                    </div>
+                </div>
+                <!-- Выбор валют -->
+                <div class="calc-area" style="margin-top: 10px;">
+                    <div class="calc-group">
+                        <label for="fromCurrency">Из валюты</label>
+                        <select id="fromCurrency">
+                            <option value="RUB">RUB — Российский рубль</option>
+                            <option value="CNY" selected>CNY — Китайский юань</option>
+                        </select>
+                    </div>
+                    <div></div>
+                    <div class="calc-group">
+                        <label for="toCurrency">В валюту</label>
+                        <select id="toCurrency">
+                            <option value="RUB" selected>RUB — Российский рубль</option>
+                            <option value="CNY">CNY — Китайский юань</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Отображение текущего курса -->
+                <div class="rate-display" style="margin-top: 20px;">
+                    Текущий курс ЦБ РФ: <strong id="currentRate">...</strong>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 40px;">Динамика курса CNY/RUB за 30 дней</h2>
+            <p style="margin-bottom: 20px; color: #5e636e;">Щёлкните по столбцу для просмотра подробной информации</p>
+            <!-- Контейнер для графика Chart.js -->
+            <div class="chart-container">
+                <canvas id="currencyChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+    СТРАНИЦА 4: КОНТАКТЫ
+-->
+<div id="page-contacts" class="page">
+    <div class="hero">
+        <div class="container">
+            <h2>Контактные данные</h2>
+            <p>Свяжитесь с ПАО «НК «Роснефть»</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2>Контактная информация</h2>
+            <div class="contacts-grid">
+                <!-- Левая колонка: контактные данные -->
+                <div class="contact-info">
+                    <h3>Головной офис</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+                        <div><h4>Адрес</h4><p>115035, г. Москва, Софийская набережная, д. 26/1</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                        <div><h4>Телефон</h4><p>+7 (495) 739-06-06</p><p>+7 (499) 517-77-77</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                        <div><h4>Электронная почта</h4><p>info@rosneft.ru</p><p>press@rosneft.ru (для СМИ)</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div>
+                        <div><h4>Режим работы</h4><p>Пн–Пт: 9:00 – 18:00</p><p>Сб, Вс: выходной</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
+                        <div><h4>Официальный сайт</h4><p><a href="https://www.rosneft.ru" target="_blank">www.rosneft.ru</a></p></div>
+                    </div>
+
+                    <h3 style="margin-top: 30px;">Горячая линия</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+                        <div><h4>Для клиентов</h4><p>8 (800) 700-30-30 (бесплатно по России)</p></div>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: карта (iframe Яндекса) -->
+                <div class="map-frame">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4e3f2b1c5d6e7f8a9b0c1d2e3f4a5b6&amp;source=constructor&amp;ll=37.6315%2C55.7425&amp;z=16&amp;pt=37.6315%2C55.7425%2Cpm2rdm" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+    СТРАНИЦА 5: ВИДЕО
+-->
+<div id="page-video" class="page">
+    <div class="hero">
+        <div class="container">
+            <h2>Видеоматериалы</h2>
+            <p>Видео о деятельности ПАО «НК «Роснефть»</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <h2>Видео о компании</h2>
+
+            <!-- Первое видео -->
+            <div class="video-wrapper">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=HkHOQvA6l5s" title="Роснефть" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Роснефть — лидер нефтегазовой отрасли России</h3>
+                    <p>Видеоролик рассказывает о деятельности компании, ключевых проектах и достижениях в области добычи и переработки нефти.</p>
+                </div>
+            </div>
+
+            <!-- Второе видео -->
+            <div class="video-wrapper" style="margin-top: 30px;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Роснефть Восток Ойл" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Проект «Восток Ойл» — будущее российской нефтедобычи</h3>
+                    <p>Документальный фильм о крупнейшем арктическом проекте компании «Восток Ойл» на полуострове Таймыр.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ============================================
+    КНОПКА "НАВЕРХ"
+-->
+<button class="back-to-top" id="backToTop" title="Наверх">↑</button>
+
+<!-- ============================================
+    ПОДВАЛ (FOOTER)
+-->
+<footer>
+    <div class="container">
+        <p>© 2024 ПАО «НК «Роснефть». Учебный сайт. Все права защищены.</p>
+        <p style="margin-top: 10px;">
+            <a href="https://www.rosneft.ru" target="_blank">Официальный сайт</a> |
+            <a href="#" class="nav-link" data-page="contacts">Контакты</a> |
+            <a href="#" class="nav-link" data-page="about">О компании</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Подключение JavaScript -->
+<script src="main.js"></script>
+</body>
+</html>
